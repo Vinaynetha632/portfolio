@@ -13,16 +13,21 @@ export default function Navbar() {
       className="w-full bg-[#0F172A] fixed top-0 z-50 border-b border-white/5"
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
-
+        
         {/* Logo */}
-        <div className="flex items-center gap-3">
+        <a
+          href="#home"
+          onClick={() => setIsOpen(false)}
+          className="flex items-center gap-3 cursor-pointer"
+        >
           <div className="bg-blue-600 p-2 rounded-lg">
             <Code size={18} className="text-white" />
           </div>
-          <h1 className="text-white font-semibold text-base sm:text-lg">
+
+          <h1 className="text-white font-semibold text-base sm:text-lg hover:text-blue-400 transition">
             Vinay Tiramdasu
           </h1>
-        </div>
+        </a>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-10">
@@ -75,6 +80,7 @@ export default function Navbar() {
           >
             About
           </a>
+
           <a
             href="#skills"
             onClick={() => setIsOpen(false)}
@@ -82,6 +88,7 @@ export default function Navbar() {
           >
             Skills
           </a>
+
           <a
             href="#projects"
             onClick={() => setIsOpen(false)}
@@ -89,6 +96,7 @@ export default function Navbar() {
           >
             Projects
           </a>
+
           <a
             href="#resume"
             onClick={() => setIsOpen(false)}
