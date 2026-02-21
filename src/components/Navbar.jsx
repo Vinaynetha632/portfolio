@@ -13,7 +13,6 @@ export default function Navbar() {
       className="w-full bg-[#0F172A] fixed top-0 z-50 border-b border-white/5"
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
-
         {/* Logo */}
         <a
           href="#home"
@@ -32,7 +31,6 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-10">
           <div className="flex items-center gap-8 text-gray-400 text-sm font-medium">
-
             <a href="#home" className="hover:text-white transition">
               Home
             </a>
@@ -40,7 +38,9 @@ export default function Navbar() {
             <a href="#about" className="hover:text-white transition">
               About
             </a>
-
+            <a href="#experience" className="hover:text-white transition">
+              Experience
+            </a>
             <a href="#skills" className="hover:text-white transition">
               Skills
             </a>
@@ -96,7 +96,13 @@ export default function Navbar() {
           >
             About
           </a>
-
+          <a
+            href="#experience"
+            onClick={() => setIsOpen(false)}
+            className="block hover:text-white"
+          >
+            Experience
+          </a>
           <a
             href="#skills"
             onClick={() => setIsOpen(false)}
@@ -133,4 +139,3 @@ export default function Navbar() {
     </motion.div>
   );
 }
-  

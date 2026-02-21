@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-   <section id="about" className="py-14 sm:py-20 px-5 sm:px-8 bg-[#0F172A]">
-
+    <section id="about" className="py-14 sm:py-20 px-5 sm:px-8 bg-[#0F172A]">
       <div className="max-w-5xl mx-auto">
+
         {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -14,7 +14,8 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-About Me</h2>
+            About Me
+          </h2>
           <div className="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
         </motion.div>
 
@@ -24,32 +25,38 @@ About Me</h2>
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-         className="text-gray-400 text-base sm:text-lg leading-relaxed text-center px-2 sm:px-0"
-
+          className="text-gray-400 text-base sm:text-lg leading-relaxed text-center px-2 sm:px-0 space-y-6"
         >
           <p>
-            I am an Electronics and Communication Engineering (ECE) graduate
-            with a strong passion for building modern digital solutions. My
-            interest lies in Full Stack Development, Software Engineering,
-            Frontend & Backend Development, and Web Application Architecture.
+            I am an Electronics and Communication Engineering (ECE) graduate 
+            currently working as a <span className="text-white font-medium">
+            Software Developer Intern at Progmaster</span>. I contribute to building 
+            scalable and user-centric web applications by implementing frontend 
+            features and backend functionalities.
           </p>
 
-          <p className="text-center mb-10 sm:mb-14 md:mb-16"
->
-            I enjoy transforming ideas into scalable and user-friendly
-            applications. I am continuously learning new technologies and
-            frameworks to stay updated with industry trends. My goal is to
-            create impactful software solutions that are efficient,
-            maintainable, and performance-driven.
+          <p>
+            Through my internship experience, I have strengthened my skills in 
+            full stack development, clean coding practices, version control, 
+            debugging, and performance optimization within a structured 
+            development environment.
+          </p>
+
+          <p>
+            I am passionate about modern web technologies and continuously refine 
+            my skills to build efficient, maintainable, and production-ready 
+            applications that deliver meaningful user experiences.
           </p>
         </motion.div>
 
         {/* Education & Location */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mt-14 sm:mt-16 text-gray-300"
->
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mt-14 sm:mt-16 text-gray-300">
+
           {/* Education */}
           <div>
-            <h3 className="text-white text-xl font-semibold mb-4">Education</h3>
+            <h3 className="text-white text-xl font-semibold mb-4">
+              Education
+            </h3>
 
             <div className="space-y-6 text-gray-400">
               <div>
@@ -68,15 +75,20 @@ About Me</h2>
             </div>
           </div>
 
-          {/* Divider for Desktop */}
+          {/* Divider (Desktop Only) */}
           <div className="hidden md:block border-l border-white/10"></div>
 
           {/* Location */}
           <div>
-            <h3 className="text-white text-xl font-semibold mb-4">Location</h3>
+            <h3 className="text-white text-xl font-semibold mb-4">
+              Location
+            </h3>
             <p className="text-gray-400 text-lg">Hyderabad, India</p>
-            <p className="text-gray-500 mt-2">  Actively Seeking Full-Time Opportunities</p>
+            <p className="text-gray-500 mt-2">
+              Actively Seeking Full-Time Opportunities
+            </p>
           </div>
+
         </div>
       </div>
     </section>
