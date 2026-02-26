@@ -8,8 +8,8 @@ const projects = [
       "A real-time full-stack chat application built using the MERN stack. It features user authentication, one-to-one messaging, real-time communication with WebSockets, and scalable backend architecture. The project focuses on performance, security, and seamless user experience.",
     image: "/Project1.jpeg",
     tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
-    demo: "https://your-chatapp-demo.com",
-    github: "https://github.com/your-chatapp-repo",
+    demo: "https://chat-application-eight-kappa.vercel.app/",
+    github: "https://github.com/Vinaynetha632/Chat-application",
   },
   {
     title: "Arya Arcade Constructions",
